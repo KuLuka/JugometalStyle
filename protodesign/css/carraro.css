@@ -1,0 +1,398 @@
+.carraro .max-width {
+  opacity: 1;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .carraro .max-width {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1291px) {
+  .carraro .max-width {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.carraro .carraro-logo-info {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 1rem;
+}
+
+.carraro .carraro-logo-info .carraro-logo {
+  background: url("./../JM/carraro-logo/carraro logo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  margin: 1rem;
+  margin-left: -.5rem;
+  width: 200px;
+  z-index: 1;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .carraro .carraro-logo-info .carraro-logo {
+    width: 250px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-logo-info .carraro-logo {
+    width: 270px;
+    height: 65px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .carraro .carraro-logo-info .carraro-logo {
+    width: 290px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .carraro .carraro-logo-info .carraro-logo {
+    width: 290px;
+    height: 70px;
+  }
+}
+
+.carraro .carraro-logo-info .carraro-info {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-logo-info .carraro-info {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .carraro .carraro-logo-info .carraro-info {
+    padding: 0 3rem 0 0;
+  }
+}
+
+.carraro .carraro-products {
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .carraro .carraro-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1291px) {
+  .carraro .carraro-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.carraro .carraro-products .carr-container1 {
+  padding: 2rem 0;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-products .carr-container1 {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .carraro .carraro-products .carr-container1 {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1291px) {
+  .carraro .carraro-products .carr-container1 {
+    border-bottom: none;
+  }
+}
+
+.carraro .carraro-products .carr-container1 .img {
+  background: url("./../JM/carraro-logo/Agricube frutteto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 260px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-products .carr-container1 .img {
+    height: 200px;
+    width: 220px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .carraro .carraro-products .carr-container1 .img {
+    height: 200px;
+    width: 220px;
+  }
+}
+
+.carraro .carraro-products .carr-container1 .img-2 {
+  background: url("./../JM/carraro-logo/carraro frutteto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-products .carr-container1 .img-2 {
+    height: 180px;
+    width: 270px;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.carraro .carraro-products .carr-container1 .img-3 {
+  background: url("./../JM/carraro-logo/carraro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-products .carr-container1 .img-3 {
+    height: 180x;
+    width: 270px;
+  }
+}
+
+.carraro .carraro-products .carr-container1 .info {
+  width: 70%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .carraro .carraro-products .carr-container1 .info {
+    width: 80%;
+  }
+}
+
+.carraro .carraro-products .carr-container1 .info h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.carraro .carraro-products .carr-container1 .info p {
+  padding: .5rem 0;
+}
+
+.carraro .carraro-products .carr-container1 .info a {
+  color: #EA1C24;
+  font-size: .8rem;
+}
+
+.product-carr {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-carr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-carr {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.product-carr .img {
+  background: url("./../JM/carraro-logo/Agricube frutteto.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .product-carr .img {
+    height: 280px;
+    width: 290px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-carr .img {
+    height: 400px;
+    width: 500px;
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-carr .img {
+    height: 400px;
+    width: 500px;
+    margin-top: 3rem;
+  }
+}
+
+.product-carr .info {
+  width: 90%;
+  margin-top: 2rem;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .product-carr .info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .product-carr .info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-carr .info {
+    width: 90%;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-carr .info {
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+
+.product-carr .info h2 {
+  font-size: 1.4rem;
+  width: 100%;
+  letter-spacing: 0.1rem;
+  padding-right: 1rem;
+}
+
+.product-carr .info p {
+  padding: .5rem 0;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+.product-carr .opis {
+  padding-top: 2rem;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .product-carr .opis {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .product-carr .opis {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-carr .opis {
+    width: 90%;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-carr .opis {
+    width: 90%;
+    margin-left: 2rem;
+  }
+}
+
+.product-carr .opis h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.product-carr .opis p {
+  padding: 0.5rem 0;
+}
+
+.product-carr .opis p span {
+  font-weight: 600;
+  color: #292929;
+}
+
+.product-carr .opis a {
+  display: inline-block;
+  margin: 2rem 0;
+  padding-bottom: .6rem;
+  color: #EA1C24;
+  font-weight: 500;
+  position: relative;
+}
+
+.product-carr .opis a::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 4rem;
+  height: .2rem;
+  background: #EA1C24;
+}
+/*# sourceMappingURL=carraro.css.map */

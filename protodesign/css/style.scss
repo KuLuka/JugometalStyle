@@ -1,0 +1,1688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$red:#EA1C24;
+$black:#292929;
+$gray:#4C4C4C;
+
+
+@mixin miniTablet-Logo {
+    @media(min-width:600px) and (max-width:700px) {@content;}
+}
+
+@mixin Tablet-Logo {
+    @media(min-width:700px) and (max-width:899px) {@content;}
+}
+
+@mixin Tablet  {
+    @media(min-width:600px)and (max-width:899px) {@content;}
+}
+
+@mixin Desktop1 {
+    @media(min-width:900px) and (max-width:1290px) {@content};
+}
+
+@mixin Desktop2 {
+    @media(min-width:1291px) {@content}
+}
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    height:100vh;
+}
+
+
+@include Desktop2 {
+    .max-width {
+    max-width:1291px;
+    margin: 0 auto;
+    }
+}
+
+
+
+
+li {
+    list-style:none;
+}
+
+a {
+    text-decoration:none
+}
+
+.nav-info {
+    display:none;
+
+    @include Tablet {
+        display: flex;
+        border-bottom:1px solid #cecece;
+
+        .info {
+            padding:1rem;
+            width:100%;
+    
+            a {
+                text-decoration:none;
+                color:$gray;
+                padding: 0 1rem;
+                font-size:.8rem;
+            }
+
+        }
+
+        .login{ 
+            padding:1rem;
+
+            a {
+                font-size:1rem;
+                text-decoration: none;
+                color:#EA1C24;
+                font-weight:bold;
+            }
+        }
+        
+    }
+
+
+    @include Desktop1 {
+        display: flex;
+        border-bottom:1px solid #cecece;
+
+        .info {
+            padding:1rem;
+            width:100%;
+    
+            a {
+                text-decoration:none;
+                color:$gray;
+                padding: 0 1rem;
+                font-size:.8rem;
+            }
+
+        }
+
+        .login{ 
+            padding:1rem;
+
+            a {
+                font-size:1rem;
+                text-decoration: none;
+                color:#EA1C24;
+                font-weight:bold;
+            }
+        }
+
+    }
+
+    @include Desktop2 {
+        display: flex;
+        border-bottom:1px solid #cecece;
+
+        .info {
+            padding:1rem;
+            width:100%;
+    
+            a {
+                text-decoration:none;
+                color:$gray;
+                padding: 0 1rem;
+                font-size:.8rem;
+            }
+
+        }
+
+        .login{ 
+            padding:1rem;
+
+            a {
+                font-size:1rem;
+                text-decoration: none;
+                color:#EA1C24;
+                font-weight:bold;
+            }
+        }
+    }
+
+}
+
+.nav-cat {
+    padding-bottom: 1rem;
+    position:relative;
+    
+    @include Tablet {
+        display:block;
+    }
+
+    @include Desktop1 {
+        display:block;
+    }
+
+    @include Desktop2 {
+        display:block;
+    }
+
+
+    .img-korpa {
+        display: flex;
+
+        @include Tablet {
+            position:relative;
+        }
+
+        @include Desktop1 {
+            position:relative;
+        }
+
+        @include Desktop2 {
+            position:relative;
+        }
+
+    }
+
+
+    .logo-img {
+        background:url('./../JM/logo_jugometal_header.png');
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
+        height:35px;
+        width:140px;
+        margin:0 auto;
+        padding:0;
+        margin-top:1rem;
+        margin-bottom:1rem;
+
+        @include miniTablet-Logo {
+            height:45px;
+            width:180px;
+        }
+
+        @include Tablet-Logo {
+            height:70px;
+            width:300px;
+        }
+
+        @include Desktop1 {
+            height:70px;
+            width:300px;
+        }
+
+        @include Desktop2 {
+            height:70px;
+            width:300px;
+        }
+
+    }
+
+
+    .korpa {
+        display:flex;
+
+        @include Tablet {
+            position:absolute;
+            top:0;
+            right:0;
+        }
+
+        @include Desktop1 {
+            position:absolute;
+            top:0;
+            right:0;
+        }
+
+        @include Desktop2 {
+            position:absolute;
+            top:0;
+            right:0;
+        }
+
+        h3 {
+            display:none;
+
+            @include Tablet { 
+                display:block;
+                padding:2rem 1rem 2rem 0rem;
+                color:#070707;
+                font-weight:400;
+            }
+
+            @include Desktop1 {
+                display:block;
+                padding:2rem 1rem 2rem 0rem;
+                color:#070707;
+                font-weight:400;
+            }
+
+            @include Desktop2 {
+                display:block;
+                padding:2rem 1rem 2rem 0rem;
+                color:#070707;
+                font-weight:400;
+            }
+
+        }
+
+        i {
+            padding: 1.7rem 1rem 1rem 0;
+
+            @include Tablet {
+                padding:2.2rem 1rem 2rem 0rem;
+            }
+
+            @include Desktop1 {
+                padding:2.2rem 1rem 2rem 0rem;
+            }
+
+            @include Desktop2 {
+                padding:2.2rem 1rem 2rem 0rem;
+            }
+        }
+    }
+
+    .hamburger-menu {
+        position:absolute;
+        top:1rem;
+        left:0;
+        display:flex;
+        align-items:center;
+        justify-content: flex-end;
+
+        @include miniTablet-Logo {
+            display:none;
+        }
+
+        @include Tablet-Logo {
+            display:none;
+        }
+
+        @include Desktop1 {
+            display:none;
+        }
+
+        @include Desktop2 {
+            display:none;
+        }
+
+
+        .hamburger {
+            width:2.5rem;
+            height:2.5rem;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+
+
+
+            div {
+                width:1.6rem;
+                height:3px;
+                border-radius:3px;
+                background: #EA1C24;
+                position:relative;
+                z-index:90;
+                transition: .5s ;
+            }
+
+            div:before,
+            div:after {
+                content:'';
+                position:absolute;
+                width:inherit;
+                height:inherit;
+                background: #EA1C24;
+                border-radius:3px;
+                transition: .5s ;
+            }
+
+            div:before {
+                transform:translateY(-7px);
+            }
+
+            div:after {
+                transform:translateY(7px);
+            }
+        }      
+
+    }
+
+    #check {
+        position:absolute;
+        top:1rem;
+        left:0;
+        z-index:100;
+        cursor:pointer;
+        width:2.5rem;
+        height:2.5rem;
+        opacity:0;
+
+    }
+
+    #check:checked ~ .hamburger-menu .hamburger div {
+        background:transparent;
+    }
+
+    #check:checked ~ .hamburger-menu .hamburger div:before {
+        transform:translateY(0) rotate(45deg);
+    }
+
+    #check:checked ~ .hamburger-menu .hamburger div:after {
+        transform:translateY(0) rotate(-45deg);
+    }
+
+}
+
+
+.banner {
+    background:url('./../JM/pexels-nicolas-veithen-1719669.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:30vh;
+
+    @include Tablet {
+        height:40vh;
+    }
+
+    @include Desktop1 {
+        height:60vh;
+    }
+
+    @include Desktop2 {
+        height:60vh;
+    }
+
+    .banner-quote {
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        height:inherit;
+        color:#fff;
+        padding:1rem;
+
+        @include Tablet {
+            padding:2rem;
+        }
+
+        @include Desktop2 {
+            padding-bottom:2rem;
+        }
+
+        h3 {
+            font-weight:lighter;
+            font-size:1.3rem;
+
+            @include Desktop1 {
+                font-size:2rem;
+            }
+
+            @include Desktop2 {
+                font-size:2.3rem;
+            }
+        }
+
+        h5 {
+            font-size:.7rem;
+
+            @include Desktop1 {
+                font-size:1.2rem;
+                font-weight:400;
+            }
+
+            @include Desktop2 {
+                font-size:1.3rem;
+            }
+
+            strong {
+                color:#EA1C24;
+            }
+        }
+    }
+}
+
+.products {
+    .traktori {
+        padding:2rem 1rem;
+
+        .img-info {
+            
+            // OVDE OVDE OVDE
+            @include Desktop1 {
+                display:none;
+            }
+
+            @include Desktop2 {
+                display:none;
+            }
+
+        .traktor-img {
+            background:url('./../JM/thumb__1600_0_0_0_auto.jpg');
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            height:15vh;
+            
+            @include Tablet-Logo {
+                height:30vh;
+            }
+
+            @include Desktop1 {
+                height:30vh;
+                width:50%;
+
+            }
+
+            
+            
+        }
+
+        .traktor-info {
+
+            h2 {
+                padding: 1rem 0;
+
+                @include Desktop1 {
+                    padding: 1rem 2rem;
+                }
+            }
+
+            p {
+
+                @include Desktop1 {
+                    padding:1rem 2rem;
+                }
+
+            }
+        }
+}
+
+        .traktor-brands {
+            display:grid;
+            grid-template-columns: repeat(2, auto);
+            grid-gap:1rem;
+            margin: 3rem 0;
+            
+            @include Desktop1() {
+                grid-template-columns: repeat(3, auto);
+            }
+
+            @include Desktop2() {
+                grid-template-columns: repeat(3, auto);
+            }
+
+            // ISPRAVI OVO SRANJE DOSADNO
+            
+
+
+            .brand {
+                transition:.3s ease-in;
+
+                @include Desktop1 {
+                    &:hover {
+                        box-shadow:0px 1px 10px rgba(250, 42, 42, 0.1);
+                        cursor: pointer;
+                    }
+              }
+
+
+          @include Desktop2 {
+              &:hover {
+                  box-shadow:0px 1px 10px rgba(250, 42, 42, 0.1);
+                  cursor: pointer;
+              }
+          }
+
+                p {
+                    width:80%;
+                    font-size:.8rem;
+                    margin: 0 auto;
+
+                    @include Desktop1 {
+                        width:60%;
+                    }
+
+                    @include Desktop2 {
+                        width:60%;
+                    }
+                }
+
+                button {
+                    margin: 1rem 0;
+                    border: none;
+                    background: #EA1C24;
+                    color:#fff;
+                    padding:.7rem
+                }
+
+                a {
+                    display:block;
+                    margin: 1rem auto;
+                    text-decoration:none;
+                    color:#EA1C24;
+                    font-weight:bold;
+                    font-size:.8rem;
+                    position:relative;
+                    width:80%;
+
+                    @include Desktop1 {
+                        width:60%;
+                        margin-bottom:2.5rem;
+                    }
+
+                    @include Desktop2 {
+                        width:60%;
+                        margin-bottom:2.5rem;
+                        font-size:1rem;
+                    }
+                }
+
+
+                a::after {
+                    content:'';
+                    position:absolute;
+                    bottom:-.4rem;
+                    left:0;
+                    width:2rem;
+                    height:.1rem;
+                    background:#EA1C24;
+                 
+                }
+
+                h4 {
+                    font-size: 1.2rem;
+                    padding:1rem 0;
+                    font-weight:600;
+                    text-align: left;
+                    margin-left:2.2rem;
+
+                    @include Desktop1 {
+                        text-align:center;
+                        margin-left:0;
+                    }
+
+                    @include Desktop2 {
+                        text-align:center;
+                        margin-left:0;
+                    }
+                }
+
+
+
+                .deere {
+                    background:url('./../JM/john-deere-tractor-500x500.png');
+                    background-position: center;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    height:150px;
+                    width:150px;
+                    margin: 0 auto;
+
+                    @include Tablet-Logo {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop1 {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop2 {
+                        height:250px;
+                        width:250px;
+                    }
+                }
+
+                .carraro {
+                    background: url('./../JM/Antonio-Carraro-TTR-10900-R.png');
+                    background-position-x: center;
+                    background-position-y:1rem;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    height:150px;
+                    width:150px;
+                    margin: 0 auto;
+
+                    @include Tablet-Logo {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop1 {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop2 {
+                        height:250px;
+                        width:250px;
+                    }
+                }
+
+                .imt {
+                    background: url('./../JM/download.jpg');
+                    background-position: center;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    height:150px;
+                    width:150px;
+                    margin: 0 auto;
+
+
+                    @include Tablet-Logo {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop1 {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop2 {
+                        height:250px;
+                        width:250px;
+                    }
+                }
+
+                .ursus {
+                    background: url('./../JM/ursus-c-3105.png');
+                    background-position: center;
+                    background-size:cover;
+                    background-repeat: no-repeat;
+                    height:150px;
+                    width:150px;
+                    margin: 0 auto;
+
+                    @include Tablet-Logo {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop1 {
+                        height:250px;
+                        width:250px;
+                    }
+
+                    @include Desktop2 {
+                        height:250px;
+                        width:250px;
+                    }
+                }
+            }
+        }
+
+
+
+        .cat-container {
+            border:1px solid black;
+
+
+
+        }
+
+        // .poljo-masine {
+           
+        //     display:flex;
+            
+
+        //     .main-img {
+        //         width:700px;
+        //         background:url('./../JM/poljomasine.jpg');
+        //         background-position: center;
+        //         background-size:cover;
+        //         background-repeat:no-repeat;
+        //         height:400px;
+        //         position:relative;
+                
+
+        //         h3 {
+        //             position:absolute;
+        //             bottom:1rem;
+        //             color:#fff;
+        //             font-weight:500;
+        //             font-size:1.5rem;
+        //             left:.7rem;
+        //         }
+
+        //     }
+
+
+        //     .content {
+        //         display:flex;
+
+        //         .kosilice {
+        //             border:1px solid #cecece;
+    
+                    
+        //             .kosilice-img {
+        //                 background:url('./../JM/FPM-kosacice.jpg');
+        //                 background-position: center;
+        //                 background-size:cover;
+        //                 background-repeat:no-repeat;
+        //                 height:150px;
+        //                 margin:0 auto;
+                        
+        //             }
+
+        //             .presa-img {
+        //                 background:url('./../JM/ursus\ presa.jpg');
+        //                 background-position: center;
+        //                 background-size:cover;
+        //                 background-repeat:no-repeat;
+        //                 height:150px;
+        //                 width:150px;
+        //                 margin:0 auto;
+        //             }
+
+        //             .atomizeri-img {
+        //                 background:url('./../JM/atomizer.jpg');
+        //                 background-position: center;
+        //                 background-size:cover;
+        //                 background-repeat:no-repeat;
+        //                 height:150px;
+        //                 width:150px;
+        //                 margin:0 auto;
+        //             }
+
+        //             h4 {
+        //                 font-size:1.2rem;
+        //                 padding:0 2rem;
+                        
+        //             }
+
+        //             p {
+        //                 padding: 1rem 2rem;
+        //             }
+
+        //             a {
+        //                 display:inline-block;
+        //                 margin-left:2rem;
+        //                 padding:.5rem 1rem;
+        //                 background:$red;
+        //                 color:#Fff;
+        //             }
+        //         }
+
+        //     }
+        // }
+
+    }
+}
+
+.about {
+    padding: 1rem 1rem;
+
+    @include Desktop1 {
+        width:70%;
+        margin: 0 auto;
+    }
+
+    @include Desktop2 {
+        width:70%;
+        margin: 0 auto;
+    }
+
+
+    .about-flex {
+        display:flex;
+        margin-bottom: 1.5rem;
+
+        .logo {
+            background: url('./../JM/logo.png');
+            background-position: center;
+                background-size:cover;
+                background-repeat: no-repeat;
+                height:80px;
+                width:100px;
+
+                @include Desktop1 {
+                    height:100px;
+                    width:120px;
+                }
+
+                @include Desktop2 {
+                    height:100px;
+                    width:120px;
+                }
+        }
+
+        .about-h {
+            padding-top: .5rem;
+            padding-left:1rem;
+
+            
+            h1 {
+                font-weight:600;
+                font-size:2.2rem;
+
+                @include Desktop1 {
+                    font-size:2.5rem;
+                }
+
+                @include Desktop2 {
+                    font-size:2.5rem;
+                }
+            }
+
+            h5 {
+                letter-spacing: .1rem;
+                color:#4C4C4C;
+            }
+        }
+
+        
+    }
+
+    .about-info {
+            p {
+                line-height: 1.5rem;
+                color:$gray !important;
+                font-weight:bold;
+
+                strong {
+                    font-weight:600;
+                    
+                }
+            }
+    }
+
+}
+
+// header {
+//     position:sticky;
+//     top:0px;
+//     background:#e7e7e7;
+//     z-index:1000;
+//     width:100%;
+
+
+
+//     .container {
+//         max-width:65rem;
+//         padding:0 2rem;
+//         height:3rem;
+//         margin: 0 auto;
+//         display: flex;
+
+//         .logo-container {
+//             flex:1;
+//             display:flex;
+//             align-items:center;
+            
+//             .logo {
+//             font-size: 1.1rem;
+//             font-weight:500;
+//             color:#292929;
+//         }
+//         }
+
+//         .nav-btn {
+//             flex:3;
+//             display:flex;
+
+//             .nav-links {
+//                 flex:2;
+
+//                 .nav-link {
+//                     position:relative;
+
+//                     .dropdown {
+//                         position:absolute;
+//                         top:100%;
+//                         left:0;
+//                         width:10rem;
+                        
+
+//                         .dropdown-link {
+
+//                             a {
+//                                 display:flex;
+//                                 background:#78888f;
+//                                 color:#292929; 
+//                             }
+//                         }
+//                     }
+//                 }
+
+//                 ul {
+//                     display:flex;
+//                     justify-content: center;
+//                     align-items: center;
+
+//                     li {
+//                         list-style-type:none;
+//                     }
+
+//                     a {
+//                         text-decoration: none;
+//                         line-height: 3rem;
+//                         color:rgb(2, 2, 2);
+//                         padding: 0 .8rem;
+//                         letter-spacing: 1px;
+//                         font-size:.95rem;
+//                         display:flex;
+//                         align-items: center;
+//                         justify-content: space-between;
+//                         transition: .5s;
+
+//                         i {
+//                             margin-left:.2rem;
+//                         }
+//                     }
+
+//                     a:hover{
+//                         transform:scale(1.1);
+//                     }
+//                 }
+
+//             }
+//         }
+
+        
+
+//         .log-sign{
+//             flex:1;
+//             display:flex;
+//             justify-content: center;
+//             align-items: center;
+
+//             .btn {
+//                 display:inline-block;
+//                 padding: .5rem 1.3rem;
+//                 font-size: .8rem;
+//                 border: 2px solid #fff;
+//                 border-radius: 2rem;
+//                 line-height: 1;
+//                 margin: 0 .2rem;
+//                 transition: .3s;
+//                 text-transform:uppercase;
+//             }
+
+//             .btn.solid, .btn.transparent:hover {
+//                 background: #fff;
+//                 color:#292929;
+//                 text-decoration: none;
+//             }
+
+
+//             .btn.transparent,.btn.solid:hover {
+//                 background:transparent;
+//                 color:#Fff;
+//             }
+//         } 
+
+        
+//     }
+
+
+
+// }
+
+
+.form {
+    width:50%;
+    margin:0 auto;
+    padding-bottom:2rem;
+    border-top:1px solid #cecece;
+
+    h3 {
+        font-size:2rem;
+        font-weight: 500;
+
+    }
+
+    form {
+        padding:1rem 0;
+
+        h5 {
+            padding:1rem 0 0.5rem 0;
+            font-size:1.2rem;
+            font-weight:400;
+        }
+
+        input {
+            border: none;
+            background:#efefef;
+            padding:1rem;
+            width:100%;
+            border-radius:5px;
+            outline:none;
+            transition:border .5s linear;
+            
+        }
+
+        button {
+            padding:0.5rem 1rem;
+            margin:1rem 0;
+            cursor:pointer;
+            outline:none;
+        }
+
+        .primary {
+            background:#EA1C24;
+            border:none;
+            color:#fff;
+            font-size:1rem;
+            padding:1rem;
+            border-radius:5px;
+            width:150px;
+        }
+
+        p {
+            color:#292929 !important;
+        }
+
+
+        .secondary {
+            border:none;
+            color:#fff;
+            font-size:1rem;
+            padding:1rem;
+            background:#4285F4;
+            border-radius:5px;
+            width:150px;
+        }
+
+        span {
+            color:#EA1C24;
+            font-weight:500;
+            cursor:pointer;
+        }
+        
+    }
+
+    
+
+}
+
+.jugometal-intro {
+     margin-bottom:3rem;
+     padding-top:2rem;
+     width:700px;
+
+    h1 {
+        margin:0;
+        padding:0;
+        color:$red;
+        font-size:4.6rem;
+        position:relative;
+        padding-top:2rem;
+    }
+
+    h1::before {
+        content:'';
+        position:absolute;
+        width:20rem;
+        height:.1rem;
+        background:$red;
+        top:0;
+        left:0;
+    }
+
+    p {
+        color:$gray;
+        padding-bottom:2rem;
+    }
+
+    h4 {
+        font-weight:500;
+        font-size:1.2rem;
+        margin-bottom:2rem;
+        padding-bottom:2rem;
+        position:relative;
+    }
+
+    h4::after {
+        content:'';
+        position:absolute;
+        width:10rem;
+        height:.1rem;
+        background:$red;
+        bottom:0;
+        left:0;
+    }
+
+    a {
+        background:$red;
+        font-weight:500;
+        color:#fff;
+        padding:0.8rem 1rem;
+        border-radius:15px;
+        display:none;
+    }
+
+    span {
+        font-weight:500;
+        color:$red;
+    }
+}
+
+// .sale-product {
+//     display:flex;
+//     border-top:1px solid #cecece;
+//     padding-top:2rem;
+
+//     .img {
+//         background: url('./../JM/Comer-kosacica.jpg');
+//         background-size:cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         width:500px;
+//         height:250px;
+//     }
+
+//     .info {
+//         width:350px;
+
+//         h2 {
+//             font-size:2.5rem;
+//             margin:1rem 0;
+//             font-weight:500;
+//         }
+
+//         .cena-h {
+//             padding:1rem 0;
+//             border-top:1px solid #cecece;
+//             border-bottom:1px solid #cecece;
+//             width:50%;
+//         }
+
+//         .opis {
+//             margin-top:1rem;
+//             line-height: 1.3rem;
+//         }
+//     }
+
+// }
+
+
+.sale-product {
+    padding:1rem;
+
+    .img {
+        background: url('./../JM/Comer-kosacica.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:400px;
+        height:220px;
+        margin: 0 auto;
+    }
+
+    .info {
+
+        @include Tablet {
+            margin:0 auto;
+            width:50%;
+        }
+        
+        h2 {
+            font-size:2.5rem;
+            font-weight:500;
+            margin-bottom:0.5rem;
+        }
+
+        .cena-h {
+            padding:1rem 0;
+            border-top:1px solid #cecece;
+            border-bottom:1px solid #cecece;
+            width:fit-content;
+            margin-bottom:.5rem;
+        }
+
+        .opis {
+            margin-top:0.5rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    .order {
+
+        @include Tablet {
+            margin: 0 auto;
+            width:50%;
+            
+        }
+
+        button{ 
+            border:none;
+            background:#EA1C24;
+            padding:1rem;
+            color:#fff;
+            font-size:1rem;
+            width:275px;
+            margin-top:1rem;
+            display:block;
+            cursor:pointer;
+
+            @include Tablet {
+                display:inline;
+            }
+        }
+
+        .pitanje {
+            width:fit-content;
+            color:#EA1C24;
+            background:#fff;
+            border:1px solid $red;
+            font-weight:bold;
+        }
+    }
+}
+
+
+.product-header {
+    background:#f7f7f7;
+    padding:2rem 2rem;
+    
+    @include Desktop2 {
+        padding-left:7.5rem;
+    }
+
+    .pocetna-link {
+        border:2px solid $gray;
+        width:fit-content;
+        border-radius:15px;
+        padding:.5rem;
+        background:#fff;
+        transition:all .4s linear;
+
+        a {
+            font-size:1rem;
+            padding:1rem 1rem;
+            color:$gray;
+            font-weight:500;
+            cursor:pointer;
+        }
+    }
+
+
+    .pocetna-link:hover {
+        border:2px solid $red; 
+        color:$red;
+    }
+
+    
+    h2 {
+        font-weight:600;
+        font-size:2rem;
+        margin-top:2rem;
+        // color:rgb(26, 26, 26);
+        color:$red;
+        margin-bottom:1rem;
+        letter-spacing:.2rem;
+    }
+
+    p {
+        color:$gray;
+    }
+}
+
+// -------------------- PROIZVODI IZ POLJO -------------- // 
+.category-product {
+    padding:1rem;
+    
+
+
+    .grid-prod {
+        @include Desktop1() {
+            display:grid;
+            grid-template-columns:repeat(2,auto);
+        }
+
+        @include Desktop2 {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            
+        }
+    }
+
+ 
+
+    .product {
+        padding:1rem;
+        margin:1rem 0;
+        border-bottom:1px solid #cecece;
+        padding-bottom:1.5rem;
+
+        @include Tablet {
+            display:flex;
+            
+        }
+
+        @include Desktop1() {
+            border-bottom:none;
+            margin-bottom:2rem;
+        }
+
+        @include Desktop2() {
+            border-bottom:none;
+            margin-bottom:2rem;
+        }
+
+        
+        .img {
+            background: url('./../JM/Mulceri/VocarskiMulcari.jpg');
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            width:400px;
+            height:200px;
+            margin:0 auto;
+            background-position-x:1rem;
+            
+            // 600-700px
+            @include miniTablet-Logo() {
+                width:300px;
+                height:160px;
+            }
+
+            // 700-899px
+            @include Tablet-Logo() {
+                width:60%;
+                
+            }
+
+    
+            @include Desktop1() {
+                width:400px;
+                height:200px;
+                
+            }
+
+            @include Desktop2() {
+                width:300px;
+                height:150px;
+            }
+        }
+
+        .prod-info {    
+            width:400px;
+            margin:0 auto;
+            padding-left:3rem;
+
+             // 600-700px
+             @include miniTablet-Logo() {
+                width:50%;
+                padding-left:1rem;
+                padding-top:1rem;
+            }
+
+            // 700-899px
+            @include Tablet-Logo() {
+                width:40%;
+                padding-top:2rem;
+                padding-left:1rem;
+            }
+
+           
+
+            @include Desktop1() {
+                width:400px;
+                margin:0 auto;
+                padding-left:1rem;
+            }
+
+            @include Desktop2() {
+                width:300px;
+                margin:0 auto;
+                padding-left:1rem;
+                
+            }
+        }
+
+        h4 {
+            margin-bottom:.5rem;
+            font-size:1.5rem;
+        }
+
+        button {
+            margin:1rem 0;
+            padding:.5rem 1rem;
+            background:#fff;
+            color:$red;
+            border:1px solid $red;
+            border-radius:15px;
+            font-size:1.2rem;
+            font-weight:500;
+            transition:all .4s linear;
+            cursor:pointer;
+
+            i {
+                margin-left:.5rem;
+            }
+
+            @include Tablet(){
+                width:150px;
+            }
+        }
+
+
+        button:hover {
+            background:$red;
+            color:#Fff;
+        }
+    }
+}
+
+
+
+
+
+.header-prep {
+    margin-top:5rem;
+    margin-bottom:2rem;
+    font-size:1.5rem;
+    font-weight:500;
+    margin-left:2rem;
+    position:relative;
+    padding-bottom:.5rem;
+}
+
+.header-prep::after {
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:6rem;
+    height:.2rem;
+    background:$red;
+}
+
+.preporuka {
+    padding:1rem;
+
+
+    @include Tablet() {
+        display:grid;
+        grid-template-columns:repeat(2,auto);
+    }
+
+    @include Desktop1() {
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+    }
+
+    @include Desktop2() {
+        display:flex;
+    }
+    
+    
+    
+
+    .prep-prod {
+        
+
+        .solis{
+            background:url('./../JM/solis60.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width:300px;
+            height:230px;
+
+            margin: 0 auto;
+
+            @include Tablet() {
+                width:150px;
+                height:115px;
+            }
+
+            @include Desktop1() {
+                width:200px;
+                height:155px;   
+            }
+
+            
+            @include Desktop2() {
+                width:200px;
+                height:155px;   
+            }
+
+        }
+
+
+
+        .solis-info {
+ 
+            padding:1rem;
+            width:100%;
+            margin:0 auto;
+
+            @include Tablet() {
+                width:100%;
+                margin-left:1rem;
+            }
+
+            @include Desktop1() {
+                width:100%;
+            }
+
+            @include Desktop2(){
+                width:300px;
+            }
+
+            h4 {
+                font-size:1.2rem;
+            }
+
+            p {
+                padding: 1rem 0;
+
+                
+            }
+
+            a {
+                display:inline-block;
+                width:fit-content;
+                padding:.5rem 1rem;
+                background:$red;
+                color:#Fff;
+                font-size:.7rem;
+
+
+                @include Tablet-Logo() {
+                    font-size:.9rem;
+                    margin-top:1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// O NAMA
+.o-nama {
+    padding:2rem;
+    width:900px;
+
+
+    .jugometal-logo {
+        background:url('./../JM/logo.png');
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        width:150px;
+        height:100px;
+        margin-top:1rem;
+        display:none;
+    }
+
+    p {
+        padding:1rem;
+    }
+}
+
+h1 {
+        font-size:3rem;
+        font-weight:500;
+        margin-left:5rem;
+    }
+
+// SERVIS
+.servis {
+    padding:2rem;
+    display:grid;
+    grid-template-columns:repeat(2,auto);
+    grid-gap:2rem;
+    
+    .container {
+        border-bottom:1px solid #cecece;
+        padding:1rem;
+        width:500px;
+    }
+
+    p {
+        
+        font-size:1.2rem;
+
+    }
+}
+
+
+
+
+.preporuka {
+    border:1px solid black;
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+
+
+    .preporuka-content {
+        border:1px solid red;
+        
+
+        .img-solis {
+            background:url('./../JM/solis60.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:120px;
+            height:100px;
+            border:1px solid green;
+            margin:0 auto;
+        }
+
+        .preporuka-info {
+            border:1px solid brown;
+            padding:1rem;
+        }
+
+
+        ul span {
+            font-weight:500;
+        }
+    }
+}

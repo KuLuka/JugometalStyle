@@ -1,0 +1,224 @@
+.full-width-line {
+  border-top: 1px solid #cecece;
+}
+
+.product-page-content {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-page-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+    margin: 0 auto;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-page-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    width: 1100px;
+    margin: 0 auto;
+    border-bottom: 1px solid #cecece;
+    margin-bottom: 1rem;
+  }
+}
+
+.product-page-content .product-page-img {
+  background: url("./../JM/ursus-c-3105.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-page-content .product-page-img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-page-content .product-page-img {
+    height: 500px;
+    width: 500px;
+  }
+}
+
+.product-page-content .product-page-info {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-page-content .product-page-info {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1291px) {
+  .product-page-content .product-page-info {
+    margin-top: 4rem;
+    height: 50%;
+  }
+}
+
+.product-page-content .product-page-info h2 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #292929;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-page-content .product-page-info h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.product-page-content .product-page-info p {
+  color: #292929;
+  font-weight: 500;
+  padding: 2rem 0 3rem 0;
+  line-height: 1.4rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .product-page-content .product-page-info p {
+    padding: 1rem 0 2rem 0;
+  }
+}
+
+.product-page-content .product-page-info .product-page-li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-page-content .product-page-info .product-page-li a {
+  border: 1px solid black;
+  padding: 0.8rem 1rem;
+  margin-right: .5rem;
+  color: #292929;
+}
+
+.product-page-content .product-page-info .product-page-li .nazad {
+  color: #EA1C24;
+  border: 1px solid #EA1C24;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.product-page-content .product-page-info .product-page-li .nazad:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(86, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px rgba(86, 0, 0, 0.4);
+}
+
+.product-page-content .product-page-info .product-page-li .ponuda {
+  background: #EA1C24;
+  color: #fff;
+  border: none;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
+.product-page-content .product-page-info .product-page-li .ponuda:hover {
+  background: #460002;
+}
+
+.teh-spec {
+  padding: 1rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .teh-spec {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1291px) {
+  .teh-spec {
+    margin-bottom: 3rem;
+    border: 1px solid red;
+    width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.teh-spec .product-page-technical {
+  margin: 0 auto;
+}
+
+.teh-spec .product-page-technical h3 {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .teh-spec .product-page-technical h3 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+.teh-spec .product-page-technical .teh-karakteristike-grid {
+  font-size: .8rem;
+  font-weight: 500;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .teh-spec .product-page-technical .teh-karakteristike-grid {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1291px) {
+  .teh-spec .product-page-technical .teh-karakteristike-grid {
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+  }
+}
+
+.teh-spec .product-page-technical .teh-karakteristike-grid .left div {
+  border: 1px solid #cecece;
+}
+
+.teh-spec .product-page-technical .teh-karakteristike-grid .right div {
+  border: 1px solid #cecece;
+}
+
+.teh-spec .product-page-info {
+  padding: 1rem 0;
+  border: 1px solid blue;
+}
+
+.teh-spec .product-page-info .product-page-special-info {
+  border: 1px solid yellow;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
+}
+/*# sourceMappingURL=productpage.css.map */

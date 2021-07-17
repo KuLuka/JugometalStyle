@@ -1,0 +1,1513 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+@media (min-width: 1291px) {
+  .max-width {
+    max-width: 1291px;
+    margin: 0 auto;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-info {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #cecece;
+  }
+  .nav-info .info {
+    padding: 1rem;
+    width: 100%;
+  }
+  .nav-info .info a {
+    text-decoration: none;
+    color: #4C4C4C;
+    padding: 0 1rem;
+    font-size: .8rem;
+  }
+  .nav-info .login {
+    padding: 1rem;
+  }
+  .nav-info .login a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #EA1C24;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #cecece;
+  }
+  .nav-info .info {
+    padding: 1rem;
+    width: 100%;
+  }
+  .nav-info .info a {
+    text-decoration: none;
+    color: #4C4C4C;
+    padding: 0 1rem;
+    font-size: .8rem;
+  }
+  .nav-info .login {
+    padding: 1rem;
+  }
+  .nav-info .login a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #EA1C24;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #cecece;
+  }
+  .nav-info .info {
+    padding: 1rem;
+    width: 100%;
+  }
+  .nav-info .info a {
+    text-decoration: none;
+    color: #4C4C4C;
+    padding: 0 1rem;
+    font-size: .8rem;
+  }
+  .nav-info .login {
+    padding: 1rem;
+  }
+  .nav-info .login a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #EA1C24;
+    font-weight: bold;
+  }
+}
+
+.nav-cat {
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav-cat {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat {
+    display: block;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat {
+    display: block;
+  }
+}
+
+.nav-cat .img-korpa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav-cat .img-korpa {
+    position: relative;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat .img-korpa {
+    position: relative;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat .img-korpa {
+    position: relative;
+  }
+}
+
+.nav-cat .logo-img {
+  background: url("./../JM/logo_jugometal_header.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 140px;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .nav-cat .logo-img {
+    height: 45px;
+    width: 180px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .nav-cat .logo-img {
+    height: 70px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat .logo-img {
+    height: 70px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat .logo-img {
+    height: 70px;
+    width: 300px;
+  }
+}
+
+.nav-cat .korpa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav-cat .korpa {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat .korpa {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat .korpa {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.nav-cat .korpa h3 {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav-cat .korpa h3 {
+    display: block;
+    padding: 2rem 1rem 2rem 0rem;
+    color: #070707;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat .korpa h3 {
+    display: block;
+    padding: 2rem 1rem 2rem 0rem;
+    color: #070707;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat .korpa h3 {
+    display: block;
+    padding: 2rem 1rem 2rem 0rem;
+    color: #070707;
+    font-weight: 400;
+  }
+}
+
+.nav-cat .korpa i {
+  padding: 1.7rem 1rem 1rem 0;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .nav-cat .korpa i {
+    padding: 2.2rem 1rem 2rem 0rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat .korpa i {
+    padding: 2.2rem 1rem 2rem 0rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat .korpa i {
+    padding: 2.2rem 1rem 2rem 0rem;
+  }
+}
+
+.nav-cat .hamburger-menu {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .nav-cat .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .nav-cat .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .nav-cat .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 1291px) {
+  .nav-cat .hamburger-menu {
+    display: none;
+  }
+}
+
+.nav-cat .hamburger-menu .hamburger {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-cat .hamburger-menu .hamburger div {
+  width: 1.6rem;
+  height: 3px;
+  border-radius: 3px;
+  background: #EA1C24;
+  position: relative;
+  z-index: 90;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav-cat .hamburger-menu .hamburger div:before,
+.nav-cat .hamburger-menu .hamburger div:after {
+  content: '';
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: #EA1C24;
+  border-radius: 3px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav-cat .hamburger-menu .hamburger div:before {
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.nav-cat .hamburger-menu .hamburger div:after {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+.nav-cat #check {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0;
+}
+
+.nav-cat #check:checked ~ .hamburger-menu .hamburger div {
+  background: transparent;
+}
+
+.nav-cat #check:checked ~ .hamburger-menu .hamburger div:before {
+  -webkit-transform: translateY(0) rotate(45deg);
+          transform: translateY(0) rotate(45deg);
+}
+
+.nav-cat #check:checked ~ .hamburger-menu .hamburger div:after {
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+.banner {
+  background: url("./../JM/pexels-nicolas-veithen-1719669.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .banner {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .banner {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1291px) {
+  .banner {
+    height: 60vh;
+  }
+}
+
+.banner .banner-quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: inherit;
+  color: #fff;
+  padding: 1rem;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .banner .banner-quote {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .banner .banner-quote {
+    padding-bottom: 2rem;
+  }
+}
+
+.banner .banner-quote h3 {
+  font-weight: lighter;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .banner .banner-quote h3 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .banner .banner-quote h3 {
+    font-size: 2.3rem;
+  }
+}
+
+.banner .banner-quote h5 {
+  font-size: .7rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .banner .banner-quote h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: 1291px) {
+  .banner .banner-quote h5 {
+    font-size: 1.3rem;
+  }
+}
+
+.banner .banner-quote h5 strong {
+  color: #EA1C24;
+}
+
+.products .traktori {
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .img-info {
+    display: none;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .img-info {
+    display: none;
+  }
+}
+
+.products .traktori .img-info .traktor-img {
+  background: url("./../JM/thumb__1600_0_0_0_auto.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15vh;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .products .traktori .img-info .traktor-img {
+    height: 30vh;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .img-info .traktor-img {
+    height: 30vh;
+    width: 50%;
+  }
+}
+
+.products .traktori .img-info .traktor-info h2 {
+  padding: 1rem 0;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .img-info .traktor-info h2 {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .img-info .traktor-info p {
+    padding: 1rem 2rem;
+  }
+}
+
+.products .traktori .traktor-brands {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-gap: 1rem;
+  margin: 3rem 0;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+}
+
+.products .traktori .traktor-brands .brand {
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand:hover {
+    -webkit-box-shadow: 0px 1px 10px rgba(250, 42, 42, 0.1);
+            box-shadow: 0px 1px 10px rgba(250, 42, 42, 0.1);
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand:hover {
+    -webkit-box-shadow: 0px 1px 10px rgba(250, 42, 42, 0.1);
+            box-shadow: 0px 1px 10px rgba(250, 42, 42, 0.1);
+    cursor: pointer;
+  }
+}
+
+.products .traktori .traktor-brands .brand p {
+  width: 80%;
+  font-size: .8rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand p {
+    width: 60%;
+  }
+}
+
+.products .traktori .traktor-brands .brand button {
+  margin: 1rem 0;
+  border: none;
+  background: #EA1C24;
+  color: #fff;
+  padding: .7rem;
+}
+
+.products .traktori .traktor-brands .brand a {
+  display: block;
+  margin: 1rem auto;
+  text-decoration: none;
+  color: #EA1C24;
+  font-weight: bold;
+  font-size: .8rem;
+  position: relative;
+  width: 80%;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand a {
+    width: 60%;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand a {
+    width: 60%;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+.products .traktori .traktor-brands .brand a::after {
+  content: '';
+  position: absolute;
+  bottom: -.4rem;
+  left: 0;
+  width: 2rem;
+  height: .1rem;
+  background: #EA1C24;
+}
+
+.products .traktori .traktor-brands .brand h4 {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 2.2rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand h4 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand h4 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+.products .traktori .traktor-brands .brand .deere {
+  background: url("./../JM/john-deere-tractor-500x500.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .products .traktori .traktor-brands .brand .deere {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand .deere {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand .deere {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.products .traktori .traktor-brands .brand .carraro {
+  background: url("./../JM/Antonio-Carraro-TTR-10900-R.png");
+  background-position-x: center;
+  background-position-y: 1rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .products .traktori .traktor-brands .brand .carraro {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand .carraro {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand .carraro {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.products .traktori .traktor-brands .brand .imt {
+  background: url("./../JM/download.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .products .traktori .traktor-brands .brand .imt {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand .imt {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand .imt {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.products .traktori .traktor-brands .brand .ursus {
+  background: url("./../JM/ursus-c-3105.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .products .traktori .traktor-brands .brand .ursus {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .products .traktori .traktor-brands .brand .ursus {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .products .traktori .traktor-brands .brand .ursus {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.products .traktori .cat-container {
+  border: 1px solid black;
+}
+
+.about {
+  padding: 1rem 1rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .about {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1291px) {
+  .about {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.about .about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.about .about-flex .logo {
+  background: url("./../JM/logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 100px;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .about .about-flex .logo {
+    height: 100px;
+    width: 120px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .about .about-flex .logo {
+    height: 100px;
+    width: 120px;
+  }
+}
+
+.about .about-flex .about-h {
+  padding-top: .5rem;
+  padding-left: 1rem;
+}
+
+.about .about-flex .about-h h1 {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .about .about-flex .about-h h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .about .about-flex .about-h h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.about .about-flex .about-h h5 {
+  letter-spacing: .1rem;
+  color: #4C4C4C;
+}
+
+.about .about-info p {
+  line-height: 1.5rem;
+  color: #4C4C4C !important;
+  font-weight: bold;
+}
+
+.about .about-info p strong {
+  font-weight: 600;
+}
+
+.form {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-top: 1px solid #cecece;
+}
+
+.form h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.form form {
+  padding: 1rem 0;
+}
+
+.form form h5 {
+  padding: 1rem 0 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.form form input {
+  border: none;
+  background: #efefef;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  -webkit-transition: border .5s linear;
+  transition: border .5s linear;
+}
+
+.form form button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.form form .primary {
+  background: #EA1C24;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.form form p {
+  color: #292929 !important;
+}
+
+.form form .secondary {
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem;
+  background: #4285F4;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.form form span {
+  color: #EA1C24;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.jugometal-intro {
+  margin-bottom: 3rem;
+  padding-top: 2rem;
+  width: 700px;
+}
+
+.jugometal-intro h1 {
+  margin: 0;
+  padding: 0;
+  color: #EA1C24;
+  font-size: 4.6rem;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.jugometal-intro h1::before {
+  content: '';
+  position: absolute;
+  width: 20rem;
+  height: .1rem;
+  background: #EA1C24;
+  top: 0;
+  left: 0;
+}
+
+.jugometal-intro p {
+  color: #4C4C4C;
+  padding-bottom: 2rem;
+}
+
+.jugometal-intro h4 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+
+.jugometal-intro h4::after {
+  content: '';
+  position: absolute;
+  width: 10rem;
+  height: .1rem;
+  background: #EA1C24;
+  bottom: 0;
+  left: 0;
+}
+
+.jugometal-intro a {
+  background: #EA1C24;
+  font-weight: 500;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 15px;
+  display: none;
+}
+
+.jugometal-intro span {
+  font-weight: 500;
+  color: #EA1C24;
+}
+
+.sale-product {
+  padding: 1rem;
+}
+
+.sale-product .img {
+  background: url("./../JM/Comer-kosacica.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 220px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .sale-product .info {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+.sale-product .info h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.sale-product .info .cena-h {
+  padding: 1rem 0;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: .5rem;
+}
+
+.sale-product .info .opis {
+  margin-top: 0.5rem;
+  line-height: 1.5rem;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .sale-product .order {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+.sale-product .order button {
+  border: none;
+  background: #EA1C24;
+  padding: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  width: 275px;
+  margin-top: 1rem;
+  display: block;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .sale-product .order button {
+    display: inline;
+  }
+}
+
+.sale-product .order .pitanje {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #EA1C24;
+  background: #fff;
+  border: 1px solid #EA1C24;
+  font-weight: bold;
+}
+
+.product-header {
+  background: #f7f7f7;
+  padding: 2rem 2rem;
+}
+
+@media (min-width: 1291px) {
+  .product-header {
+    padding-left: 7.5rem;
+  }
+}
+
+.product-header .pocetna-link {
+  border: 2px solid #4C4C4C;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  padding: .5rem;
+  background: #fff;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.product-header .pocetna-link a {
+  font-size: 1rem;
+  padding: 1rem 1rem;
+  color: #4C4C4C;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.product-header .pocetna-link:hover {
+  border: 2px solid #EA1C24;
+  color: #EA1C24;
+}
+
+.product-header h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 2rem;
+  color: #EA1C24;
+  margin-bottom: 1rem;
+  letter-spacing: .2rem;
+}
+
+.product-header p {
+  color: #4C4C4C;
+}
+
+.category-product {
+  padding: 1rem;
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .category-product .grid-prod {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 1291px) {
+  .category-product .grid-prod {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+  }
+}
+
+.category-product .product {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-bottom: 1px solid #cecece;
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .category-product .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .category-product .product {
+    border-bottom: none;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .category-product .product {
+    border-bottom: none;
+    margin-bottom: 2rem;
+  }
+}
+
+.category-product .product .img {
+  background: url("./../JM/Mulceri/VocarskiMulcari.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 200px;
+  margin: 0 auto;
+  background-position-x: 1rem;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .category-product .product .img {
+    width: 300px;
+    height: 160px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .category-product .product .img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .category-product .product .img {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .category-product .product .img {
+    width: 300px;
+    height: 150px;
+  }
+}
+
+.category-product .product .prod-info {
+  width: 400px;
+  margin: 0 auto;
+  padding-left: 3rem;
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .category-product .product .prod-info {
+    width: 50%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .category-product .product .prod-info {
+    width: 40%;
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .category-product .product .prod-info {
+    width: 400px;
+    margin: 0 auto;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 1291px) {
+  .category-product .product .prod-info {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 1rem;
+  }
+}
+
+.category-product .product h4 {
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+}
+
+.category-product .product button {
+  margin: 1rem 0;
+  padding: .5rem 1rem;
+  background: #fff;
+  color: #EA1C24;
+  border: 1px solid #EA1C24;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+  cursor: pointer;
+}
+
+.category-product .product button i {
+  margin-left: .5rem;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .category-product .product button {
+    width: 150px;
+  }
+}
+
+.category-product .product button:hover {
+  background: #EA1C24;
+  color: #Fff;
+}
+
+.header-prep {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-left: 2rem;
+  position: relative;
+  padding-bottom: .5rem;
+}
+
+.header-prep::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 6rem;
+  height: .2rem;
+  background: #EA1C24;
+}
+
+.preporuka {
+  padding: 1rem;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .preporuka {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .preporuka {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (min-width: 1291px) {
+  .preporuka {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.preporuka .prep-prod .solis {
+  background: url("./../JM/solis60.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .preporuka .prep-prod .solis {
+    width: 150px;
+    height: 115px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .preporuka .prep-prod .solis {
+    width: 200px;
+    height: 155px;
+  }
+}
+
+@media (min-width: 1291px) {
+  .preporuka .prep-prod .solis {
+    width: 200px;
+    height: 155px;
+  }
+}
+
+.preporuka .prep-prod .solis-info {
+  padding: 1rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+  .preporuka .prep-prod .solis-info {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1290px) {
+  .preporuka .prep-prod .solis-info {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1291px) {
+  .preporuka .prep-prod .solis-info {
+    width: 300px;
+  }
+}
+
+.preporuka .prep-prod .solis-info h4 {
+  font-size: 1.2rem;
+}
+
+.preporuka .prep-prod .solis-info p {
+  padding: 1rem 0;
+}
+
+.preporuka .prep-prod .solis-info a {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .5rem 1rem;
+  background: #EA1C24;
+  color: #Fff;
+  font-size: .7rem;
+}
+
+@media (min-width: 700px) and (max-width: 899px) {
+  .preporuka .prep-prod .solis-info a {
+    font-size: .9rem;
+    margin-top: 1rem;
+  }
+}
+
+.o-nama {
+  padding: 2rem;
+  width: 900px;
+}
+
+.o-nama .jugometal-logo {
+  background: url("./../JM/logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 100px;
+  margin-top: 1rem;
+  display: none;
+}
+
+.o-nama p {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-left: 5rem;
+}
+
+.servis {
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
+}
+
+.servis .container {
+  border-bottom: 1px solid #cecece;
+  padding: 1rem;
+  width: 500px;
+}
+
+.servis p {
+  font-size: 1.2rem;
+}
+
+.preporuka {
+  border: 1px solid black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+.preporuka .preporuka-content {
+  border: 1px solid red;
+}
+
+.preporuka .preporuka-content .img-solis {
+  background: url("./../JM/solis60.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 100px;
+  border: 1px solid green;
+  margin: 0 auto;
+}
+
+.preporuka .preporuka-content .preporuka-info {
+  border: 1px solid brown;
+  padding: 1rem;
+}
+
+.preporuka .preporuka-content ul span {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */

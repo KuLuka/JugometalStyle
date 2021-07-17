@@ -1,0 +1,321 @@
+$red:#EA1C24;
+$black:#292929;
+$gray:#4C4C4C;
+
+
+@mixin miniTablet-Logo {
+    @media(min-width:600px) and (max-width:700px) {@content;}
+}
+
+@mixin Tablet-Logo {
+    @media(min-width:700px) and (max-width:899px) {@content;}
+}
+
+@mixin Tablet  {
+    @media(min-width:600px)and (max-width:899px) {@content;}
+}
+
+@mixin Desktop1 {
+    @media(min-width:900px) and (max-width:1290px) {@content};
+}
+
+@mixin Desktop2 {
+    @media(min-width:1291px) {@content}
+}
+
+
+.full-width-line {
+    border-top:1px solid #cecece;
+}
+
+.product-page-content {
+    margin-bottom:2rem;
+
+    @include Desktop1(){
+        display:grid;
+        grid-template-columns: repeat(2,50%);
+        margin:0 auto;
+        border-bottom:1px solid #cecece;
+        margin-bottom:1rem;
+        padding:2rem 0;
+        width:80%;
+    }
+
+    @include Desktop2(){
+        display:grid;
+        grid-template-columns: repeat(2,auto);
+        width:1100px;
+        margin:0 auto;
+        border-bottom:1px solid #cecece;
+        margin-bottom:1rem;
+    }
+    
+
+    .product-page-img {
+        background:url('./../JM/ursus-c-3105.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width:300px;
+        height:300px;
+        margin:0 auto;
+
+
+
+        @include Desktop1() {
+            height:300px;
+            width:300px;
+            ;
+        }
+
+        @include Desktop2() {
+            height:500px;
+        width:500px;
+        }
+        
+    }
+
+    .product-page-info {
+        width:80%;
+        margin:0 auto;
+        
+       
+
+        @include Desktop1() {
+            width:90%;
+            
+        }
+
+        @include Desktop2() {
+            margin-top:4rem;
+            height:50%;
+        }
+        
+        
+
+
+        h2 {
+            font-size:2.5rem;
+            padding:1rem 0;
+            color:$black;
+
+            @include Desktop1() {
+                font-size:1.8rem;
+                
+            }
+        }
+
+        p {
+            color:$black;
+            font-weight:500;
+            padding:2rem 0 3rem 0;
+            line-height: 1.4rem;
+
+
+            @include Desktop1() {
+                padding:1rem 0 2rem 0;
+            }
+        }
+
+        .product-page-li {
+            display:flex;
+            
+            a {
+                border:1px solid black;
+                padding:0.8rem 1rem;
+                margin-right:.5rem;
+                color:$black;
+            }
+
+            .nazad {
+                color:$red;
+                border:1px solid $red;
+                transition:all .3s ease;
+                box-shadow:none;
+            }
+
+            .nazad:hover {
+                box-shadow:0px 0px 10px rgba(86, 0, 0, 0.4);
+            }
+
+            .ponuda {
+                background:$red;
+                color:#fff;
+                border:none;
+                transition:all .3s linear;
+            }
+
+            .ponuda:hover {
+                background:#460002;
+            }
+        }
+    }
+}
+
+.teh-spec {
+    padding:1rem;
+
+    @include Desktop1() {
+        margin:0 auto;
+        
+    }
+
+    @include Desktop2() {
+        margin-bottom:3rem;
+        border:1px solid red;
+        width:1000px;
+        margin:0 auto;
+    }
+    
+
+    .product-page-technical {
+
+        margin:0 auto;
+
+        h3 {
+            padding:1rem 0;
+            font-size:1.8rem;
+            font-weight:500;
+
+            @include Desktop1() {
+                font-size:1.4rem;
+                text-align:center;
+            }
+        }
+
+
+        .teh-karakteristike-grid {
+            font-size:.8rem;
+            font-weight:500;
+            display:grid;
+            grid-template-columns: repeat(2,50%);
+            
+
+            @include Desktop1() {
+                width:700px;
+                margin: 0 auto;
+                
+            }
+
+            @include Desktop2() {
+                width:100%;
+                border:1px solid black;
+                text-align:center;
+            }
+            
+            
+            .left {
+                div {
+                    border:1px solid #cecece;
+                }
+            }
+
+            .right {                 
+                div {
+                    border:1px solid #cecece;
+                }
+            }
+        
+        }
+
+    }
+
+    .product-page-info {
+        padding:1rem 0;
+        border:1px solid blue;
+
+
+        .product-page-special-info {
+            border:1px solid yellow;
+            padding:1rem;
+            display:grid;
+            grid-template-columns: repeat(2,auto);
+            grid-gap:2rem;
+        }
+    }
+
+
+}
+
+
+//     .spec-oprema {
+//         margin-bottom:2rem;
+//         color:$black;
+
+//         @include Tablet() {
+//             margin-top:2rem;
+//             display:grid;
+//             grid-template-columns: repeat(2,50%);
+//             grid-gap:1rem;
+           
+//             .s-oprema {
+            
+//             margin:0 auto;
+//         }
+
+//             .d-oprema {
+//                 margin:0 auto;
+//             }
+//         }
+
+//         @include Desktop1() {
+//             display:grid;
+//             grid-template-columns: repeat(2,50%);
+//             grid-gap:1rem;
+//             width:700px;
+//             margin:0 auto;
+//             padding:2rem 0;
+
+//             .s-oprema {
+            
+//                 margin:0 auto;
+//             }
+    
+//                 .d-oprema {
+//                     margin:0 auto;
+//                 }
+//         }
+
+//         @include Desktop2() {
+//             display:grid;
+//             grid-template-columns: repeat(2,50%);
+//             grid-gap:1rem;
+//             width:700px;
+//             margin:0 auto;
+//             padding:2rem 0;
+
+//             .s-oprema {
+            
+//                 margin:0 auto;
+//             }
+    
+//                 .d-oprema {
+//                     margin:0 auto;
+//                 }
+//         }
+
+
+
+//         h3 {
+//             font-size:1.5rem;
+//             font-weight:500;
+//             padding:1rem 0;
+//         }
+
+        
+
+//         ul {
+//             li {
+//                 padding:.5rem 0;
+//                 font-size:.8rem;
+//             }
+//         }
+//     }
+
+// }
+
+// .oprema-oprema {
+//     border:1px solid black;
+//     width:700px;
+//     margin:0 auto;
+// }

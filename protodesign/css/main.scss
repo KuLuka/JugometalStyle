@@ -1,0 +1,1740 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$red:#EA1C24;
+$black:#282828;
+$gray:#4C4C4C;
+$font:#737373;
+$cat-color:#f0f0f0;
+
+
+
+@mixin miniTablet-Logo {
+    @media(min-width:600px) and (max-width:700px) {@content;}
+}
+
+@mixin Tablet-Logo {
+    @media(min-width:700px) and (max-width:899px) {@content;}
+}
+
+@mixin Tablet  {
+    @media(min-width:600px)and (max-width:899px) {@content;}
+}
+
+@mixin Desktop1 {
+    @media(min-width:900px) and (max-width:1290px) {@content};
+}
+
+@mixin Desktop2 {
+    @media(min-width:1291px) {@content}
+}
+
+
+.trac-logos {
+    margin-top:2rem;
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    place-content:center;
+    grid-gap:2rem;
+    // ovo je za fon sve, dole je ono origigi
+
+    @include Tablet() {
+        display:grid;
+        grid-template-columns:repeat(3,auto);
+    }
+
+    @include Desktop1() {
+        display:grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap:4rem;
+    }
+
+    @include Desktop2() {
+        display:grid;
+        grid-template-columns: repeat(4,250px);
+        grid-gap:4rem;
+    }
+
+
+    .carraro-logo-img {
+        background: url('./../JM/logo/carrarologo.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:140px;
+        height:35px;
+        outline:none;
+
+
+        @include Tablet() {
+            width:190px;
+            height:53px;
+            margin:0 auto;
+        }
+
+        @include Desktop1() {
+            width:190px;
+            height:53px;
+            margin:0 auto;
+        }
+        
+
+        @include Desktop2() {
+            width:240px;
+            height:70px;
+        }
+    }
+
+    .ursus-logo-img {
+        background: url('./../JM/logo/Ursus-Logo.png');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:140px;
+        height:35px;
+        outline:none;
+
+        @include Tablet() {
+            width:190px;
+            height:53px;
+            margin:0 auto;
+        }
+        
+        @include Desktop1() {
+            width:190px;
+            height:53px;
+            margin:0 auto;
+        }
+
+
+        @include Desktop2() {
+            width:240px;
+            height:70px;
+        }
+    }
+
+    .mahindra-logo-img {
+        background: url('./../JM/logo/mahindra-logo.png');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:140px;
+        height:35px;
+        outline:none;
+
+
+        @include Tablet() {
+            width:190px;
+            height:53px;
+        }
+
+        @include Desktop1() {
+            width:190px;
+            height:53px;
+        }
+        
+
+        @include Desktop2() {
+            width:240px;
+            height:70px;
+        }
+        
+    }
+
+    .zetor-logo-img {
+        background: url('./../JM/logo/zetor-logo.png');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:68px;
+        height:20px;
+        margin:0 auto;
+        margin-top:.5rem;
+        margin-bottom:1.1rem;
+        outline:none;
+    
+        @include Tablet() {
+            width:120px;
+            height:35px;
+            margin:0 auto;
+            margin-bottom:.5rem;
+            margin-top:.5rem;
+        }
+
+        @include Desktop1() {
+            width:120px;
+            height:35px;
+            margin:0 auto;
+            margin-bottom:.5rem;
+            margin-top:.5rem;
+        }
+
+
+        @include Desktop2() {
+            width:120px;
+            height:35px;
+        }
+    }
+
+    .solis-logo-img {
+        background: url('./../JM/logo/solis-logo.png');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:100px;
+        height:35px;
+        margin-left:1.3rem;
+        outline:none;
+
+        @include Tablet() {
+            width:120px;
+            height:35px;
+            margin:0 auto;
+            margin-bottom:.5rem;
+            margin-top:.5rem;
+        }
+
+        @include Desktop1() {
+            width:120px;
+            height:35px;
+            margin:0 auto;
+            margin-bottom:.5rem;
+            margin-top:.5rem;
+        }
+
+        @include Desktop2 {
+            width:120px;
+            height:35px;
+            margin:0 auto;
+            margin-bottom:1rem;
+            margin-top:1.3rem;
+        }
+    }
+
+    .deere-logo-img {
+        background: url('./../JM/logo/jd-logo-min.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:140px;
+        height:35px;
+        outline:none;
+
+        @include Tablet() {
+            width:190px;
+            height:53px;
+            margin:0 auto;
+        }
+
+        @include Desktop1() {
+            width:190px;
+            height:53px;
+            margin:0 auto;
+        }
+
+
+        @include Desktop2 {
+            width:240px;
+            height:70px;
+        }
+    }
+
+    .yto-logo-img {
+        background: url('./../JM/logo/yto-logo.png');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:120px;
+        height:64px;
+
+        margin-left:.6rem;
+        outline:none;
+
+        @include Tablet() {
+            margin:0 auto;
+            margin-top:.5rem;
+        }
+
+        @include Desktop1() {
+            margin:0 auto;
+            margin-top:.5rem;
+        }
+        
+
+        @include Desktop2() {
+            width:120px;
+            height:64px;
+            margin:0 auto;
+            margin-bottom:1rem;
+            margin-top:-.5rem;
+        }
+    }
+
+    .imt-logo-img {
+        background: url('./../JM/logo/imt-logo.gif');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:70px;
+        height:72px;
+
+        outline:none;
+        margin-left:2rem;
+        margin-top:-.5rem;
+
+        @include Tablet() {
+            margin:0 auto;
+        }
+
+
+        @include Desktop1() {
+            margin:0 auto;
+        }
+
+        @include Desktop2() {
+            width:80px;
+            height:82px;
+            margin:0 auto;
+            margin-bottom:1rem;
+            margin-top:-1.6rem;
+        }
+    }
+
+    .belarus-logo-img {
+        background: url('./../JM/logo/belarus-logo.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:100px;
+        height:25px;
+        margin:1rem 0;
+        margin-left:1.3rem;
+        outline:none;
+
+        @include Tablet() {
+            width:150px;
+            height:38px;
+            margin:1rem auto;
+        }
+
+
+        @include Desktop1() {
+            width:150px;
+            height:38px;
+            margin:1rem auto;
+        }
+
+        @include Desktop2() {
+            width:200px;
+            height:50px;
+            margin:1rem auto;
+        }
+    }
+
+
+    .trac-info {
+        width:140px;
+
+        @include Tablet() {
+            width:190px;
+            height:53px;
+            overflow:hidden;
+        }
+
+        @include Desktop1() {
+            width:190px;
+            height:53px;
+            overflow:hidden;
+        }
+
+        @include Desktop2(){
+            border-right:1px solid #cecece;
+            width:270px;
+            padding-right:2rem;
+        }
+        
+
+        p {
+            color:$gray;
+            padding-top:.5rem;
+            margin-bottom:.5rem;
+            width:90%;
+            display:none;
+
+            @include Tablet() {
+                display:block;
+                width:100%;
+                padding-left:1rem;
+                font-size:.8rem;             
+            }
+
+            @include Desktop1() {
+                display:block;
+                width:100%;
+                padding-left:1rem;
+                font-size:.8rem;
+            }
+
+            @include Desktop2() {
+                display:block;
+                width:100%;
+                padding-left:1rem;
+                font-size:.8rem;
+                
+            }
+        }
+    }
+
+    a {
+        color:$black;
+        font-size:.8rem;
+        font-weight:bold;
+        text-align:center;
+        margin-top:.5rem;
+        display:block;
+
+        @include Tablet() {
+            text-align:left;
+            margin-left:1rem;
+        }
+
+        @include Desktop1() {
+            text-align:left;
+            margin-left:1rem;
+        }
+
+        @include Desktop2() {
+            text-align:left;
+            margin-left:1rem;
+        }
+    }
+
+    .no-right-border-desktop {
+        border-right:unset;
+    }
+ 
+}
+
+
+.agri-machinery {
+    margin:2rem 0;
+    margin-bottom:0rem;
+    
+    .agri-banner {
+        background:url('./../JM/poljomasine.jpg');
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width:100%;
+        position:relative;
+        padding:2rem 1rem;
+        display:grid;
+        place-content:center;
+
+        @include Tablet() {
+            padding:2rem 3rem;
+        }
+
+        @include Desktop1() {
+            padding:2rem 3rem;
+        }
+
+        h3 {
+            z-index:10;
+            color:#fff;
+            font-size:1.4rem;
+            position:relative;
+            font-weight:500;
+            margin-top:.5rem;
+            border:1px solid #fff;
+            padding:1rem;
+            width:fit-content;
+
+            @include Desktop1() {
+                font-size:1.8rem;
+            }
+        }
+    
+        p {
+            color:#cecece;
+            position:relative;
+            z-index:10;
+            font-size:.8rem;
+            margin:1rem 0;
+
+            @include Desktop1() {
+               
+                font-size:1rem;
+            }
+        }
+    }
+
+    .agri-banner::after {
+        position:absolute;
+        content:'';
+        top:0;
+        left:0;
+        background-color:rgba(0,0,0,0.9);
+        width:100%;
+        height:100%;
+        z-index:1;
+    }
+
+
+    .agri-container {
+        padding:1rem .5rem;
+
+        @include Tablet() {
+            display:grid;
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @include Desktop1() {
+            display:grid;
+            grid-template-columns: repeat(3,auto);
+        }
+
+        @include Desktop2() {
+            display:grid;
+            grid-template-columns: repeat(4,auto);
+        }
+        
+
+        .agri-item {
+            padding:1rem 0;
+            border:1px solid #cecece;
+            width:90%;
+            margin:1rem auto 2rem;
+            
+            
+
+            .atomizeri {
+                background:url('./../JM/atomizer.jpg');
+                height:150px;
+                width:150px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin:0 auto;
+            }
+
+            .kosacica {
+                background:url('./../JM/kosacica.jpg');
+                height:150px;
+                width:170px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin:0 auto;
+            }
+
+            .spider {
+                background:url('./../JM/spider45.jpg');
+                height:200px;
+                width:200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin:0 auto;
+
+                @include Desktop1() {
+                    height:175px;
+                    width:175px;
+                    margin-bottom:-1.5rem;
+                }
+
+                @include Desktop2() {
+                    height:175px;
+                    width:175px;
+                    margin-bottom:-1.5rem;
+                }
+            }
+
+            .freza {
+                background:url('./../JM/RotacioneFreze.jpg');
+                height:150px;
+                width:250px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin:0 auto;
+            }
+
+           .agri-content-info {
+               padding:1rem 2rem;
+
+
+               h4 {
+                   font-size:1.1rem;
+                   text-transform:uppercase;
+                   color:$black;
+               }
+
+               p {
+                   font-size:.8rem;
+                   color:$gray;
+                   padding:.5rem 0;
+               }
+
+               ul {
+                   padding:.5rem 2rem 0rem;
+
+                   li {
+                       
+                       padding:.25rem 0;
+                       font-size:.6rem;
+                       color:$red;
+
+                       span {
+                           font-size:1rem;
+                           font-weight:600;
+                           color:$black;
+                           display:block;
+                       }
+                   }
+               }
+
+            //    ul li::before {
+            //         content: "\2022";
+            //         color: red;
+            //         font-weight: bold; 
+            //         display: inline-block;
+            //         width: 1rem; 
+            //         margin-left: -1rem;
+            //     }
+
+
+                a {
+                    color:$red;
+                    border:1px solid $red;
+                    padding:.6rem .8rem;
+                    margin-top:1rem;
+                    display:block;
+                    text-align:center;
+                    font-weight:500;
+                }
+           }
+
+
+            
+        }
+    }
+
+
+    .desktop1-only {
+        display:none;
+
+        @include Desktop1() {
+            display:block;
+        }
+    }
+    
+    
+}
+
+
+
+.jugometal-moto {
+    padding:1rem 2rem;
+    width:100%;
+    text-align:center;
+    margin-top:7rem;
+
+    @include Tablet() {
+        width:600px;
+        margin:7rem auto 0;
+    }
+
+    @include Desktop1() {
+        width:700px;
+        padding-top:2rem;
+        margin:7rem auto 0;
+    }
+    
+    @include Desktop2() {
+        width:800px;
+        padding-top:2rem;
+        margin:7rem auto 0;
+    }
+   
+
+   h1 {
+        color:$red;
+        font-size:3rem;
+        margin:0;
+      
+   }
+
+  
+
+   p {
+       color:#cecece;
+       padding-bottom:2rem;
+       margin-right:5.5rem;
+   }
+
+   h6 {
+       font-size:1rem;
+       margin-bottom:2rem;
+       padding-bottom:2rem;
+       position:relative;
+       line-height: 28px;
+        font-weight: 400;
+        color:$font;
+   }
+
+ 
+
+   a {
+       background:$red;
+       font-weight:500;
+       color:#fff;
+       padding:0.8rem 1rem;
+       border-radius:15px;
+       display:none;
+   }
+
+   span {
+       font-weight:400;
+       color:$red;
+   }
+}
+
+
+
+.main-cat-container-grid {
+    // width:1200px;
+    // margin:0 auto;
+    // margin-bottom:2rem;
+    // padding-bottom:5rem;
+   padding:1rem 0;
+  
+
+    .main-tractors {
+        background: url('./../JM/new/tr.jpg');
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:100%;
+        height:550px;
+        position:relative;
+
+        @include Tablet() {
+            height:350px;
+        }
+
+        @include Desktop1() {
+            height:450px;
+        }
+
+        @include Desktop2() {
+            height:400px;
+            max-width:1300px;
+            margin:0 auto;
+        }
+
+        .cat-cat {
+           z-index:10;
+           position:relative;
+           height:100%;
+           display:flex;
+           flex-direction: column;
+            // justify-content: space-between;
+            padding:0 2rem;
+
+            h2 {
+                color:#fff;
+                margin-top:4rem;
+                font-size:3rem;
+                transition:color .2s linear;
+                letter-spacing:2px;
+
+
+                @include Desktop1() {
+                    position:absolute;
+                    top:2rem;
+                    right:22rem;
+                }
+
+                @include Desktop2() {
+                    position:absolute;
+                    top:2rem;
+                    right:22rem;
+                }
+                
+            }
+
+            h2:hover {
+                color:#fff;
+                cursor:default;
+            }
+
+            // PROBA
+            .cat-cat-wrapper {
+                margin-bottom:2rem;
+                margin-top:4rem;
+                display:flex;
+                justify-content: space-between;
+
+                @include Tablet() {
+                    flex-direction:column;
+                }
+
+                @include Desktop1() {
+                    flex-direction:column;
+                    margin-top:11rem;
+                    position:absolute;
+                    bottom:2rem;
+                    right:2rem;
+                }
+
+                @include Desktop2() {
+                    flex-direction:column;
+                    margin-top:11rem;
+                    position:absolute;
+                    bottom:2rem;
+                    right:2rem;
+                }
+
+                .cat-left {
+                    display:flex;
+                    flex-direction:column;
+
+                    @include Tablet() {
+                        flex-direction:row;
+                    }
+
+                    @include Desktop1() {
+                        flex-direction:row;
+                        
+                    }
+
+                    @include Desktop2() {
+                        flex-direction:row;
+                        
+                    }
+                }
+
+                .cat-right {
+                    display:flex;
+                    flex-direction:column;
+
+                    @include Tablet() {
+                        flex-direction:row;
+                    }
+
+                    @include Desktop1() {
+                        flex-direction:row;
+                        
+                    }
+
+                    @include Desktop2() {
+                        flex-direction:row;
+                        
+                    }
+                }
+                
+                a {
+                    color:#fff;
+                    font-size:1.6rem;
+                    padding:1rem 0;
+
+                    @include Tablet() {
+                        padding:1rem 2rem 1rem 0;
+                        font-size:1.3rem;
+                    }
+
+                    @include Desktop1() {
+                        padding:1rem 2rem 1rem 0;
+                        font-size:1.3rem;
+                    }
+
+                    @include Desktop2() {
+                        padding:1rem 2rem 1rem 0;
+                        font-size:1.3rem;
+                    }
+
+
+                }
+
+                .cat-wrapper {
+                    margin-bottom:1rem;
+                    display:flex;
+                    
+
+                    a {
+                        color:$cat-color;
+                        padding:0 1rem;
+                        font-size:1rem;
+                        border-right:.5px solid $cat-color;
+                        transition:color .2s linear;
+                        font-weight:500;
+                    }
+
+                    a:last-child {
+                        border-right:none;
+                    }
+
+                    a:hover {
+                        cursor:pointer;
+                        color:rgb(248, 165, 165);
+                    }
+                            
+                }
+
+            }
+        }
+    }
+
+    .main-tractors::after {
+        position:absolute;
+        top:0;
+        left:0;
+        content:'';
+        background:rgba(25,28,0,0.82);
+        height:100%;
+        width:100%;
+    }
+
+
+    .main-machine {
+        width:100%;        
+        margin-top:2px;
+
+        @include Desktop1() {
+            display:grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-gap:.2rem;
+            overflow:hidden;
+           
+        }
+
+        @include Desktop2() {
+            display:grid;
+            grid-template-columns: repeat(3, 33.3%);
+            grid-gap:.2rem;
+            overflow:hidden;
+            max-width:1300px;
+           margin:0 auto;
+        }
+
+        .vocarstvo {
+            background: url('./../JM/new/voc.jpg');
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:100%;
+            position:relative;
+            height:550px;
+            margin-top:2px;
+
+            @include Tablet() {
+                height:300px;
+            }
+
+            @include Desktop1() {
+                margin-top:0px;
+                height:450px;
+            }
+
+            @include Desktop2() {
+                height:450px;
+            }
+            
+        }
+
+        .vocarstvo::after {
+            position:absolute;
+            top:0;
+            left:0;
+            content:'';
+            background:rgba(0,9,1, 0.88);
+            height:100%;
+            width:100%;
+        }
+
+        .ratarstvo {
+            background: url('./../JM/new/rat.jpg');
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:100%;
+            position:relative;
+            height:550px;
+
+            @include Tablet() {
+                height:400px;
+            }
+
+            @include Desktop1() {
+                margin-top:0px;
+                height:450px;
+            }
+
+            @include Desktop2() {
+                margin-top:2px;
+                height:450px;
+            }
+        }
+
+        .ratarstvo::after {
+            position:absolute;
+            top:0;
+            left:0;
+            content:'';
+            background:rgba(20,9,9,0.86);
+            height:100%;
+            width:100%;
+        }
+
+        .stocarstvo {
+            background: url('./../JM/new/stoc.jpg');
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:100%;
+            position:relative;
+            height:550px;
+            margin-top:2px;
+
+            @include Tablet() {
+                height:300px;
+            }
+
+            @include Desktop1 {
+                width:99vw;
+                height:350px;
+                margin-top:0px;
+            }
+
+            @include Desktop2() {
+                height:450px;
+            }
+        }
+
+        .stocarstvo::after {
+            position:absolute;
+            top:0;
+            left:0;
+            content:'';
+            background:rgba(28,30,0,0.83);
+            height:100%;
+            width:100%;
+        }
+
+
+        .cat-cat {
+            z-index:10;
+            position:relative;
+            height:100%;
+            display:flex;
+            flex-direction: column;
+             justify-content: space-between;
+             padding:0 2rem;
+
+             
+ 
+             h2 {
+                 color:#fff;
+                 margin-top:4rem;
+                 font-size:3rem;
+                 transition:color .2s linear;
+                 letter-spacing:2px;
+             }
+ 
+             h2:hover {
+                 color:#fff;
+                 cursor:default;
+             }
+ 
+             .cat-cat-wrapper {
+                 margin-bottom:2rem;
+ 
+ 
+                 .cat-wrapper {
+                     margin-bottom:1rem;
+                     display:flex;
+
+                     @include Tablet() {
+                        margin-left:-1rem;
+                     }
+                     
+ 
+                     a {
+                         color:$cat-color;
+                         padding:0 1rem;
+                         font-size:1rem;
+                         border-right:.5px solid $cat-color;
+                         transition:color .2s linear;
+                         font-weight:500;
+
+
+                         @include Desktop1() {
+                            font-size:1.2rem;
+                           
+                        }
+
+                        @include Desktop2() {
+                            font-size:1rem;
+                        }
+                     }
+ 
+                     a:last-child {
+                         border-right:none;
+                     }
+ 
+                     a:hover {
+                         cursor:pointer;
+                         color:rgb(248, 165, 165);
+                     }
+                             
+                 }
+ 
+             }
+ 
+            
+         }
+
+    }
+}
+
+
+.ponuda-header {
+    padding:1rem 2rem;
+    width:100%;
+    text-align:center;
+    margin-top:4rem;
+
+    @include Tablet() {
+        width:600px;
+        margin:7rem auto 0;
+    }
+
+    @include Desktop1() {
+        width:700px;
+        padding-top:2rem;
+        margin:7rem auto 0;
+    }
+    
+    @include Desktop2() {
+        width:800px;
+        padding-top:2rem;
+        margin:7rem auto 0;
+    }
+
+
+    h2 {
+        color:$red;
+        font-size:2rem;
+        margin:0;
+        font-weight:500;
+    }
+
+    p { 
+        font-size:1rem;
+        margin-bottom:2rem;
+        padding-bottom:2rem;
+        position:relative;
+        line-height: 28px;
+         font-weight: 400;
+         color:$font;
+         margin-top:2rem;
+    }
+}
+
+
+.ponuda-products {
+    padding: 0 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    text-align:center;
+
+    @include Desktop1() {
+        grid-template-columns: repeat(3,33%);
+    }
+
+    @include Desktop2() {
+        grid-template-columns: repeat(4,25%);
+    }
+
+    .ponuda-product-item {
+        margin-bottom:2rem;
+        border-right:1px solid $cat-color;
+
+        .solis-60 {
+            background-color:#cecece;
+            width:100px;
+            height:100px;
+            margin: 0 auto;
+        }
+
+        .product-item-content {
+            padding:1rem 1rem;
+
+            h5 {
+                color:$font;
+                font-weight:400;
+                margin-bottom:.5rem;
+            }
+
+            h3 {
+                color:$black;
+                margin-bottom:.5rem;
+                font-weight:500;
+                font-size:1.4rem;
+                
+            }
+
+            hr {
+                @include Tablet() {
+                    width:50%;
+                    margin:0 auto;
+                }
+
+                @include Desktop1() {
+                    width:50%;
+                    margin:0 auto;
+                }
+
+                @include Desktop2() {
+                    width:50%;
+                    margin:0 auto;
+                }
+            }
+
+
+            p {
+                height:78px;
+                overflow: hidden;
+                margin-bottom:1rem;
+                margin-top:1rem;
+                color:$gray;
+                font-size:.9rem;
+                padding:0rem .5rem;
+                line-height:20px;
+
+                @include Desktop1() {
+                    max-width:90%;
+                    margin:1rem auto;
+                }
+
+                @include Desktop2() {
+                    max-width:90%;
+                    margin:1rem auto;
+                }
+            }
+
+
+            a {
+                color:$red;
+                border:.5px solid $red;
+                padding:.7rem 2rem;
+                margin-top:.5rem;
+                display:inline-block;
+                font-size:.9rem;
+            }
+        }
+    }
+
+    .ponuda-product-item:nth-child(even) {
+        border-right:none;
+
+        @include Desktop1() {
+            border-right:1px solid $cat-color;
+        }
+
+        @include Desktop2() {
+            border-right:1px solid $cat-color;
+        }
+    }
+
+    @include Desktop1() {
+        .ponuda-product-item:nth-child(3n) {
+            border-right:none;
+        }
+    }
+
+    @include Desktop2() {
+        .ponuda-product-item:nth-child(3n) {
+            border-right:1px solid $cat-color;
+        }
+
+        .ponuda-product-item:nth-child(4n) {
+            border-right:none;
+        }
+    }
+}
+
+
+.luka-radoja {
+    background-color: #ECF2F8;
+    margin-top:5rem;
+    text-align:center;
+    padding:3rem;
+   
+  
+
+    .quote {
+        margin-bottom:3rem;
+        font-weight:bold;
+        font-size:2rem;
+    }
+
+    p {
+        color:$font;
+        line-height:27px;
+
+        @include Desktop1() {
+            width:70%;
+            margin: 0 auto;
+        }
+
+        @include Desktop2() {
+            width:700px;
+            margin: 0 auto;
+        }
+    }
+
+    h5 {
+        color:$black;
+        font-size:1.2rem;
+        margin-top:2rem;   
+        font-weight:500;
+    }
+}
+
+footer {
+    background:$black;
+    padding:1rem;
+
+    @include Tablet() {
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    @include Desktop1() {
+        display:grid;
+        grid-template-columns:repeat(2,50%);
+        padding:1rem 2rem;
+    }
+
+    @include Desktop2() {
+        display:grid;
+        grid-template-columns:repeat(2,50%);
+        padding:1rem 2rem;
+    }
+    
+    h4 {
+        color:$cat-color;
+        font-size:1rem;
+        font-weight:500;
+        
+    }
+
+    p {
+        color:$font;
+        color:#a3a3a3;
+        line-height:27px;
+        font-size:.8rem;
+        
+    }
+
+    .jugo-adresa,.jugo-mail,.jugo-phone,.jugo-face {
+        padding:1rem 0;
+    }
+
+    .jugo-pages {
+
+        @include Desktop1() {
+            display:grid;
+            grid-template-columns: repeat(2,auto);
+            grid-gap:1rem;
+        }
+
+        @include Desktop2() {
+            display:grid;
+            grid-template-columns: repeat(2,auto);
+            grid-gap:1rem;
+        }
+
+        .page-servis,.page-akcija,.page-about,.page-finansiranje,.page-kontakt,.page-prodavnica {
+            padding:1rem 0;
+
+            @include Desktop1() {
+                height:100px;
+            }
+
+            @include Desktop2() {
+                height:100px;
+            }
+        }
+
+        .page-kontakt {
+            @include Desktop1() {
+                margin-top:-1rem;
+            }
+
+            @include Desktop2() {
+                margin-top:-1rem;
+            }
+        }
+
+    }
+}
+
+.credits {
+    border-top:1px solid $font;
+    background:$black;
+    padding:1rem;
+    color:$cat-color;
+
+    @include Tablet() {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    @include Desktop1() {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    @include Desktop2() {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    p {
+        font-weight:300;
+        font-size:.8rem;
+
+        @include Desktop2() {
+            font-size:1rem;
+            margin-left:1rem;
+        }
+    }
+
+    .credit-cards {
+        display:flex;
+
+        @include Tablet() {
+            margin-top:-1rem;
+        }
+
+        @include Desktop1() {
+            margin-top:-1rem;
+        }
+
+        @include Desktop2() {
+            margin-top:-1rem;
+        }
+        
+        
+    
+        .visa {
+            background: url('./../JM/visa1.png');
+            width:50px;
+            height:30px;
+            background-position: center;
+            background-size:cover;
+            
+            margin-top:.6rem;
+        }
+
+        .master {
+            background: url('./../JM/Master_Card.png');
+            width:50px;
+            height:50px;
+            background-position: center;
+            background-size:cover;
+            
+        }
+
+        .express {
+            background: url('./../JM/a-e.png');
+            width:50px;
+            height:50px;
+            background-position: center;
+            background-size:cover;
+            
+        }
+
+        .dina {
+            background: url('./../JM/dina-card.png');
+            width:50px;
+            height:50px;
+            background-position: center;
+            background-size:cover;
+            
+        }
+    }
+    
+}
+
+
+// PRODAVNICA
+.prodavnica-banner {
+    background:url('./../JM/pexels-nicolas-veithen-1719669.jpg');
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:30vh;
+    position:relative;
+    z-index:-11000;
+    display:grid;
+    place-content:center;
+    text-align:left;
+    padding:1rem 0;
+
+    @include Tablet {
+        height:20vh;
+    }
+
+    @include Desktop1 {
+        height:20vh;
+    }
+
+    @include Desktop2 {
+        height:20vh;
+    }
+
+
+    .prodavnica-banner-info {
+
+        margin-right:6rem;
+    }
+
+    h1{
+        position:relative;
+        z-index:-1;
+        color:$cat-color;
+        font-size:4rem;
+        display:inline-block;
+
+        margin:0;
+    }
+
+    p {
+        color:$cat-color;
+        z-index:-1;
+        position:relative;
+        font-size:.9rem;
+        font-weight:300;
+    }
+}
+
+.prodavnica-banner::after {
+    position:absolute;
+    content:'';
+    top:0;
+    left:0;
+    background:rgba(0,0,0,.8);
+    height: 100%;
+    width:100%;
+    z-index:-11000;
+}
+
+
+.six-grid-system {
+    padding:1rem;
+    display:grid;
+    place-content:center;
+    text-align:center;
+
+    @include Tablet {
+        margin:0 auto;
+        width:90%;
+        grid-template-columns:repeat(2,50%);
+    }
+
+    @include Desktop1() {
+        margin:0 auto;
+        width:90%;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+
+    @include Desktop2() {
+        margin:0 auto;
+        width:80%;
+        grid-template-columns: repeat(3, 33.3%);
+    }
+    
+
+    .box {
+        border-top:1px solid $cat-color;
+        padding:3rem 0;
+
+        @include Tablet() {
+            border-right:1px solid $cat-color;
+        }
+
+
+        @include Desktop1() {
+            border-right:1px solid $cat-color;
+            
+        }
+
+        @include Desktop2() {
+            border-right:1px solid $cat-color;
+            
+        }
+
+
+
+        h2 {
+            font-size:2rem;
+            font-weight:500;
+            color:$black
+        }
+
+        .box-brands {
+            display:flex;
+            margin:1rem auto; 
+            justify-content: center;
+
+
+            p {
+                font-size:1rem;
+                font-weight:300;
+                color:$font;
+                border-right:1px solid $cat-color;
+                width:fit-content;
+                padding:.1rem .5rem;
+                margin:.5rem 0;
+                
+
+                &:last-child {
+                    border-right:none;
+                }
+            }           
+        }
+
+        a {
+            color:$red;
+            border:.5px solid $red;
+            padding:.7rem 2rem;
+            margin-top:1rem;
+            display:inline-block;
+            font-size:.9rem;
+
+        }
+
+
+       
+    }
+
+    .box:first-child {
+        border-top:none;
+    }
+
+
+    .box:nth-child(2) {
+        @include Tablet() {
+            border-top:none;
+        }
+
+        @include Desktop1() {
+            border-top:none;
+        }
+
+
+        @include Desktop2() {
+            border-top:none;
+        }
+    }
+
+    .box:nth-child(3) {
+        @include Desktop1() {
+            border-top:none;
+        }
+
+        @include Desktop2() {
+            border-top:none;
+        }
+    }
+
+    
+
+    .box:nth-child(3n) {
+        @include Desktop1() {
+            border-right:none;
+        }
+
+        @include Desktop2() {
+            border-right:none;
+        }
+    }
+    
+    .box:nth-child(even) {
+        @include Tablet() {
+            border-right:none;
+        }
+    }
+}
+
+.box-hide {
+    opacity:0;
+}
+
+// --------------------------------------
+
+.online-product-banner {
+    background:url('./../JM/baner2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:30vh;
+    position:relative;
+    display:grid;
+    place-content:center;
+
+    h1{
+        position:relative;
+        z-index:1;
+        color:$cat-color;
+        font-size:3rem;
+        display:inline-block;
+        margin:0;
+    }
+
+
+    @include Tablet {
+        height:20vh;
+    }
+
+    @include Desktop1 {
+        height:20vh;
+    }
+
+    @include Desktop2 {
+        height:20vh;
+    }
+}
+
+.online-product-banner::after {
+    position:absolute;
+    content:'';
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background:rgba(0,0,0,.9);
+}
+
+
+.online-product-container {
+    bordeR:1px solid red;
+
+    h1 {
+        font-size:1.3rem;
+        color:$black;
+        text-align:center;
+        padding:1rem;
+    }
+
+    .online-products { 
+        border:1px solid black;
+        padding:1rem;
+        display:grid;
+        grid-template-columns:repeat(2,50%);
+        text-align:center;
+    }
+}
